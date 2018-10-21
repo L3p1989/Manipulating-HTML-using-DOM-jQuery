@@ -1,0 +1,1 @@
+$('body').prepend('<button type="submit">Submit</button>');
