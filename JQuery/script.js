@@ -27,3 +27,11 @@ $("div:contains('Hey look')").after('<p>Click me!</p>');//creates `p` after `div
 $("p:contains('Click me')").click(function() {
     $(this).css('color', 'rgb(' + getRandomInt(255) + ',' + getRandomInt(255) + ',' + getRandomInt(255));
 });//adds 'click' function to `p`
+
+$("p:contains('Click me')").after('<button>Me?</button>')
+
+$('button:contains("Me?")').after('<div class= "my-div"></div>')
+
+$('button:contains("Me?")').click(function() {
+    $('.my-div').append('<p><span>Patrick</span></p>')
+})
