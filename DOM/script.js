@@ -68,4 +68,4 @@ liBtn.addEventListener('click', function () {
         friendList.appendChild(friendLi);
         friendLi.textContent = friends[friendCount];
     }
-});
+});//as long as friends haven't already been added, this will add friends to ul as li's
