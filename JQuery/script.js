@@ -12,8 +12,14 @@ $('button:contains("Submit")').click(function() {
     }
 });//submits input text as an alert if there's a value to display
 
-$("div:contains('Hey')").hover(function() {
+$("div:contains('Hey look')").hover(function() {
     $(this).css('background', 'purple');
 }, function() {
     $(this).css('background', 'white');
 });//changes background color of div when moused over
+
+$("div:contains('Hey look')").after('<p>Click me!</p>')
+
+$("p:contains('Click me')").click(function() {
+    $(this).css('color', 'red')
+})
