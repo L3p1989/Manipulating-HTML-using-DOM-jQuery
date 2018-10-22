@@ -1,3 +1,7 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+};//this is a random number generator for 0-max
+
 $('body').prepend('<button type="submit">Click</button>');//prepends first button
 
 $("button:contains('Click')").click(function() {
@@ -18,8 +22,8 @@ $("div:contains('Hey look')").hover(function() {
     $(this).css('background', 'white');
 });//changes background color of div when moused over
 
-$("div:contains('Hey look')").after('<p>Click me!</p>')
+$("div:contains('Hey look')").after('<p>Click me!</p>');//creates `p` after `div`
 
 $("p:contains('Click me')").click(function() {
-    $(this).css('color', 'red')
-})
+    $(this).css('color', 'rgb(' + getRandomInt(255) + ',' + getRandomInt(255) + ',' + getRandomInt(255));
+});//adds 'click' function to `p`
