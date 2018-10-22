@@ -1,9 +1,8 @@
-var btnSubmit = document.createElement('button', 'type="submit"');
-var btnSubmitText = document.createTextNode("Submit")
+var btnSubmit = document.getElementsByClassName('btnSubmit');
+var btnSubmitText = document.createTextNode("Submit");
 
-btnSubmit.appendChild(btnSubmitText);
-document.body.appendChild(btnSubmit);
+btnSubmit[0].appendChild(btnSubmitText);
 
-btnSubmit.addEventListener('click', function() {
-    alert('You clicked me!')
-})
+btnSubmit[0].addEventListener('click', function() {
+    alert()
+});
