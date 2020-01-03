@@ -9,6 +9,7 @@ var colorText = document.createElement("p");
 var ctText = document.createTextNode("Please click gently!");
 
 var divBtn = document.createElement("button");
+var clicks = 0;
 var divBtnText = document.createTextNode("Me?");
 var myDiv = document.createElement("div");
 
@@ -70,8 +71,13 @@ divBtn.addEventListener("click", function() {
   var myNameSpace = document.createElement("span");
   var myName = document.createTextNode("Patrick");
 
-  myDiv.appendChild(myNameSpace);
-  myNameSpace.appendChild(myName);
+  if (clicks !== 1) {
+    myDiv.appendChild(myNameSpace);
+    myNameSpace.appendChild(myName);
+    clicks++;
+  } else {
+    alert("There is only 1 me");
+  }
 }); //adds myNameSpace with myName text to myDiv on divBtn click
 
 liBtn.addEventListener("click", function() {
